@@ -2,7 +2,7 @@
 
 > Victim host 10.10.10.77 and Kali host 10.10.10.10
 
-![](https://xrest.ru/schemes/00/11/be/62/%D0%9A%D0%BE%D1%82%D1%8D%20%D1%85%D0%B0%D0%BA%D0%B5%D1%80-1.jpg)
+![](https://i.pinimg.com/originals/2a/db/1e/2adb1e4dbe67ce0ff39c4b080f015aa3.jpg)
 
 ## Useful Commands
 
