@@ -1,3 +1,5 @@
+> Victim host 10.10.10.77 and Kali host 10.10.10.10
+
 # Useful Commands
 
 ## Create web server
