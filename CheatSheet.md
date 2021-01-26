@@ -1,10 +1,10 @@
 > Victim host 10.10.10.77 and Kali host 10.10.10.10
 
-# Useful Commands
+## Useful Commands
 
-## Create web server
+### Create web server
 
-### With Python
+#### With Python
 
 ```
 python3 -m http.server 8888
@@ -14,9 +14,9 @@ python3 -m http.server 8888
 python -m SimpleHTTPServer 8888
 ```
 
-## Upgrade reverse shell
+### Upgrade reverse shell
 
-### With Socat
+#### With Socat
 
 *Victim:* 
 ```
