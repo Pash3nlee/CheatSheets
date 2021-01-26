@@ -113,7 +113,7 @@ Quick directory busting
 dirb http://10.10.10.77/
 ```
 
-#### fuff
+#### FuFF
 
 VHOST Discovery
 
