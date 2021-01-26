@@ -122,7 +122,7 @@ dirb http://10.10.10.77/
 VHOST Discovery
 
 ```
-ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.10/ -H "Host:FUZZ.10.10.10.10"
+ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.77/ -H "Host:FUZZ.10.10.10.77"
 ```
 
 ## Privilege Escalation
