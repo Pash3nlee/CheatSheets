@@ -2,6 +2,8 @@
 
 > Victim host 10.10.10.77 and Kali host 10.10.10.10
 
+![](https://xrest.ru/schemes/00/11/be/62/%D0%9A%D0%BE%D1%82%D1%8D%20%D1%85%D0%B0%D0%BA%D0%B5%D1%80-1.jpg)
+
 ## Useful Commands
 
 ### Create web server
