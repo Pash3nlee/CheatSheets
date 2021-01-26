@@ -61,11 +61,15 @@ nc -lvp 4444
 
 TCP Scan:
 
-```nmap -sV -sC -p- 10.10.10.77```
+```
+nmap -sV -sC -p- 10.10.10.77
+```
 
 UDP Scan:
 
-```nmap -sU -sV -p- 10.10.10.77```
+```
+nmap -sU -sV -p- 10.10.10.77
+```
 
 # Privilege Escalation
 
