@@ -1,3 +1,5 @@
+#CheatSheet with my popular tools
+
 > Victim host 10.10.10.77 and Kali host 10.10.10.10
 
 ## Useful Commands
@@ -118,7 +120,7 @@ dirb http://10.10.10.77/
 VHOST Discovery
 
 ```
-fuf -w subdomains-top1million-110000.txt -u https://10.10.10.10/ -H "Host:FUZZ.10.10.10.10"
+ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.10/ -H "Host:FUZZ.10.10.10.10"
 ```
 
 ## Privilege Escalation
