@@ -101,6 +101,24 @@ UDP Scan:
 nmap -sU -sV -p- 10.10.10.77
 ```
 
+## If Web Server
+
+### dirb
+
+Quick directory busting
+
+```
+dirb http://10.10.10.77/
+```
+
+### fuff
+
+VHOST Discovery
+
+```
+fuf -w /home/kali/HTB/Laboratory/subdomains-top1million-110000.txt -u https://laboratory.htb/ -H "Host:FUZZ.laboratory.htb"
+```
+
 # Privilege Escalation
 
 # Reverse Engineering
