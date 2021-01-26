@@ -1,4 +1,3 @@
-*10.10.10.10 -Kali host && 10.10.10.77 - Victim host*
 # Useful Commands
 
 > This section will include commands / code I used in the lab environment that I found useful
