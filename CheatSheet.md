@@ -109,15 +109,21 @@ nmap -sU -sV -p- 10.10.10.77
 
 ### If Web Server
 
-* #### dirb
+* #### GoBuster
 
-Quick directory busting
+Full directory busting with extensions
 
 ```
-dirb http://10.10.10.77/
+gobuster dir -e -u http://academy.htb/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,txt,htm,html,phtml,js,zip,rar,tar -s 200,302
 ```
 
 * #### FuFF
+
+Full directory busting with extensions
+
+```
+ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.htb/FUZZ -e php,txt,htm,html,phtml,js,zip,rar,tar -mc 200,302
+```
 
 VHOST Discovery
 
