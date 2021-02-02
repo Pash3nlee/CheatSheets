@@ -134,6 +134,8 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.h
 
 VHOST Discovery
 
+* #### FuFF
+
 ```
 ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.77/ -H "Host:FUZZ.10.10.10.77"
 ```
