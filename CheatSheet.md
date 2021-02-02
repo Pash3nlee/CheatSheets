@@ -68,12 +68,12 @@ python -m SimpleHTTPServer 8888
 
 * #### With SCP
 
-*Copy from host*
+*Copy from Victim*
 ```
 scp user@10.10.10.77:/home/user/file.txt /home/kali/
 ```
 
-*Copy to host* 
+*Copy to Victim* 
 ```
 scp -r /home/kali/file.txt user@10.10.10.77:/home/user/
 ```
@@ -116,7 +116,7 @@ nmap -sU -sV -p- 10.10.10.77
 
 ### If Web Server
 
-Full directory busting with extensions
+Brute dir with extensions
 
 * #### GoBuster
 
