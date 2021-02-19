@@ -2,7 +2,7 @@
 
 > Victim host 10.10.10.77 and Kali host 10.10.10.10
 
-![](https://i.pinimg.com/originals/2a/db/1e/2adb1e4dbe67ce0ff39c4b080f015aa3.jpg)
+![](https://github.com/Pash3nlee/HackTheBox/raw/main/images/cat.PNG)
 
 # Useful Commands
 
