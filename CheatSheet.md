@@ -147,7 +147,7 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.h
 * #### FuFF
 
 ```
-ffuf -w subdomains-top1million-110000.txt -u https://10.10.10.77/ -H "Host:FUZZ.10.10.10.77"
+ffuf -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -u http://schooled.htb/ -H "Host:FUZZ.schooled.htb" -fw 5338
 ```
 
 ### CSRF
