@@ -139,7 +139,7 @@ gobuster dir -e -u http://academy.htb/ -w /usr/share/seclists/Discovery/Web-Cont
 * #### FuFF
 
 ```
-ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.htb/FUZZ -e php,txt,htm,html,phtml,js,zip,rar,tar -mc 200,302
+ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://academy.htb/FUZZ -e .php,.txt,.htm,.html,.phtml,.js,.zip,.rar,.tar,.sh -mc 200,302
 ```
 
 ### VHOST Discovery
