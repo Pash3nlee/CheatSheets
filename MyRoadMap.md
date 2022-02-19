@@ -5,29 +5,30 @@
   
   *Hack easy machines on HTB and learn windows basics in THM*
   
-  :book: Status: *In progress*
+  **Status**: *In progress*
 
-:book: ### Learn about AD and Kerberos.
+* ### Learn about AD and Kerberos.
   ```Platrorm: HTB, THM, articles```
   
   *Learning AD and Kerb in THM, then hack machines on HTB*
   
   **Status:** *waiting to start*
 
-:book: ### Learn Forensic (Valotility).
+* ### Learn Forensic (Valotility).
   ```Platrorm: THM, HTB, cyberdefenders```
   
   *Learning Valotility and investiagtion in THM, pass  Intro Blue Team HTB, CTF Tasks on CyberDefenders*
   
   **Status:** *waiting to start*
-:book: ### Learn Powershell, Python for analitics and penetest
+
+* ### Learn Powershell, Python for analitics and penetest
   ```Platrom: Life```
   
   *Learning powershell in process hacking and in modules THM. learning python in THM too*
   
   **Status:** *waiting to start*
 
-:book: ### Learn WebAcademy
+* ### Learn WebAcademy
   ```Platrorm: PortSwigger```
   
   *Relearning OwaspTop 10 if i will have time*
