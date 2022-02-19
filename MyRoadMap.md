@@ -10,7 +10,7 @@
   ```Platrorm: THM, HTB, cyberdefenders```
 
 * ### Learn WebAcademy
-  ```Platrorm: TPortSwigger```
+  ```Platrorm: PortSwigger```
 
 * ### Learn Powershell, Python for analitics and penetest
   ```Platrom: Life```
