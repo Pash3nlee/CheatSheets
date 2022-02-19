@@ -19,20 +19,20 @@
   
   *Learning Valotility and investiagtion in THM, pass  Intro Blue Team HTB, CTF Tasks on CyberDefenders*
   
-  **Status:** *waiting to start*
+  🐲 **Status:** *waiting to start*
 
 * ### Learn Powershell, Python for analitics and penetest
   ```Platrom: Life```
   
   *Learning powershell in process hacking and in modules THM. learning python in THM too*
   
-  **Status:** *waiting to start*
+  :panda_face: **Status:** *waiting to start*
 
 * ### Learn WebAcademy
   ```Platrorm: PortSwigger```
   
   *Relearning OwaspTop 10 if i will have time*
   
-  **Status:** *waiting to start*
+  🐝 **Status:** *waiting to start*
 
 
