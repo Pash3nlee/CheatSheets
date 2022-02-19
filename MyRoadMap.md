@@ -1,4 +1,4 @@
-![](https://pbs.twimg.com/media/EH-wOGsW4AAEMFu.jpg:large)
+![](https://images.chesscomfiles.com/uploads/v1/user/76699450.671fd1da.160x160o.834986e52663@2x.png)
 
 * ### Learn about Windows Exploits.
   ```Platrorm: HTB, THM```
