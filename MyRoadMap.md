@@ -1,6 +1,6 @@
 ![](https://foto-cats.ru/wp-content/uploads/2/9/6/2963ab81b7a76b932db8043646b02cbb.jpeg)
 
-:book: ### Learn about Windows Exploits.
+* ### Learn about Windows Exploits.
   ```Platrorm: HTB, THM```
   
   *Hack easy machines on HTB and learn windows basics in THM*
