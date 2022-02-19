@@ -12,5 +12,5 @@
 * ### Learn WebAcademy
   ```Platrorm: TPortSwigger```
 
-* ### Learn Powershell, Python, bash for anlitics and penetest
+* ### Learn Powershell, Python for analitics and penetest
   ```Platrom: Life```
