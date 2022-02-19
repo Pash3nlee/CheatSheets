@@ -1,4 +1,4 @@
-![](https://foto-cats.ru/wp-content/uploads/2/9/6/2963ab81b7a76b932db8043646b02cbb.jpeg)
+![](https://pbs.twimg.com/media/EH-wOGsW4AAEMFu.jpg:large)
 
 * ### Learn about Windows Exploits.
   ```Platrorm: HTB, THM```
