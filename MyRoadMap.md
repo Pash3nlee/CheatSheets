@@ -4,11 +4,11 @@
 * ### Learn about AD and Kerberos.
   ```Platrorm: HTB, THM, articles```
 
-* ## Learn Forensic (Valotility).
+* ### Learn Forensic (Valotility).
   ```Platrorm: THM, HTB, cyberdefenders```
 
-* ## Learn WebAcademy
+* ### Learn WebAcademy
   ```Platrorm: TPortSwigger```
 
-* ## Learn Powershell, Python, bash for anlitics and penetest
+* ### Learn Powershell, Python, bash for anlitics and penetest
   ```Platrom: Life```
