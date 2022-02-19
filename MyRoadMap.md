@@ -5,14 +5,14 @@
   
   *Hack easy machines on HTB and learn windows basics in THM*
   
-  **Status**: *In progress*
+  :hatching_chick: **Status**: *In progress*
 
 * ### Learn about AD and Kerberos.
   ```Platrorm: HTB, THM, articles```
   
   *Learning AD and Kerb in THM, then hack machines on HTB*
   
-  **Status:** *waiting to start*
+  🐱 **Status:** *waiting to start*
 
 * ### Learn Forensic (Valotility).
   ```Platrorm: THM, HTB, cyberdefenders```
