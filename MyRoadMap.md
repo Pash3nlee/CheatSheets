@@ -3,7 +3,7 @@
 * ### Learn about Windows Exploits.
   ```Platrorm: HTB, THM```
   
-  *Hack machines on HTB and learn windows basics in THM*
+  *Hack easy machines on HTB and learn windows basics in THM*
 
 * ### Learn about AD and Kerberos.
   ```Platrorm: HTB, THM, articles```
