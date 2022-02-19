@@ -5,7 +5,7 @@
   
   *Hack easy machines on HTB and learn windows basics in THM*
   
-  **Status:** *In progress*
+  :book: Status: *In progress*
 
 * ### Learn about AD and Kerberos.
   ```Platrorm: HTB, THM, articles```
