@@ -31,7 +31,7 @@
 * ### Learn WebAcademy
   ```Platrorm: PortSwigger```
   
-  *Relearning OwaspTop 10 if i will have time*
+  *Relearning OwaspTop 10 if i will have time, read book O'Rielly*
   
   🐝 **Status:** *Waiting to start*
 
